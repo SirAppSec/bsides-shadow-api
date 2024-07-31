@@ -1,0 +1,10 @@
+extends: "spectral:oas"
+rules:
+  check-routes:
+    description: "Check that all routes in routes.log are in the OpenAPI file and vice versa"
+    given: "$.paths"
+    severity: error
+    then:
+      function: checkRoutes
+      functionOptions:
+        routesFile: "../JavaScript/routes.log"
