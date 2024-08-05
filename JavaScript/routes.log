@@ -27,3 +27,4 @@ GET /registerform
 GET /login
 GET /profile
 GET /beer
+GET /v1/api-docs
