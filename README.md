@@ -5,6 +5,9 @@ This is a snippet folder from the Bsides Las Vegas Talk - [Prepare for the Appoc
 # Shadow APIs
 Shadow and Zombie APIs are pieces of old/forgotten code that is still externally reachable. They are not maintained, and often prone to have vulnerabilities or leak PIIs.
 
+### Video Demo
+A demo of Javascript - Node can be found here: https://www.youtube.com/watch?v=-z5Bn829qeQ
+
 ## Discovering Shadow APIs
 We have several methods of extracting what the application/service is exposing.
 
