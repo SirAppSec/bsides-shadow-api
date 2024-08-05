@@ -8,8 +8,12 @@ The advantage to swagger is that it's CI/CD ready and can use cli status code to
 npm install -g @stoplight/spectral-cli
 ```
 
-# routes.log
+# Prepare routes.log
 Ensure that all of the extracted routes are in a file in the following format, every line is a new endpoint , first word is the method, a space and the path.
+```bash
+npm run start
+cp app_err.log
+```
 
 ### Normalization
 | Because some path variables in REST are noted differently, we would normalize the paths in an internal step. As we don't care about the name of the path variable, just the fact that it is a variable.

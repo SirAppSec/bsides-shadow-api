@@ -1,10 +1,11 @@
-extends: "spectral:oas"
+# extends: "spectral:oas"
+functions: [shadowApi]
 rules:
   check-routes:
     description: "Check that all routes in routes.log are in the OpenAPI file and vice versa"
     given: "$.paths"
     severity: error
     then:
-      function: checkRoutes
+      function: shadowApi
       functionOptions:
         routesFile: "../JavaScript/routes.log"
